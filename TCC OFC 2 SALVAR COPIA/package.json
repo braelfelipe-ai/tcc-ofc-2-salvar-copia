@@ -1,0 +1,22 @@
+{
+  "name": "amora-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Loja Amora com catálogo de joias, pedidos e pagamento Pix",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "pg": "^8.13.1",
+    "qrcode": "^1.5.4"
+  }
+}

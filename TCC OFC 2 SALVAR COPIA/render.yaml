@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: amora-joias
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: PIX_KEY
+        sync: false
+      - key: PIX_RECEIVER_NAME
+        sync: false
+      - key: PIX_RECEIVER_CITY
+        sync: false
+      - key: SELLER_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        sync: false
